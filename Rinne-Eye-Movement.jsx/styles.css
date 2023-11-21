@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+}
+
+.eyes {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.eye {
+  width: 260px;
+  height: 100px;
+  display: inline-block;
+  margin: 120px;
+  position: relative;
+  overflow: hidden;
+  background: #e2e2e2;
+  border-radius: 200%;
+  position: relative;
+  overflow: hidden;
+  transform: rotate(4deg); /* Rotate left eye slightly clockwise */
+
+  /* Shading effect as a semi-circle */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 50%, transparent 100%);
+    transform-origin: bottom center;
+    border-radius: 50%;
+    z-index: -1; /* Place the semi-circle behind the eye */
+  }
+}
+
+
+
+/* Right eye, rotate counterclockwise */
+.eye:nth-child(2) {
+  transform: rotate(-4deg); /* Rotate right eye slightly counterclockwise */
+}
+
+/* Outer circle (red eye) with the single dot */
+.ball {
+  width: 900px;
+  height: 900px;
+  background: #c392cb; /* Red pupils */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #000000; /* Adjust the shadow size as needed */
+  z-index: 0; /* Set z-index to keep the ball behind rings */
+}
+
+/* First ring around the center pupil */
+.ball .first-ring {
+  width: 65px; /* Adjust the size of the first ring as needed */
+  height: 65px; /* Adjust the size of the first ring as needed */
+  border: 1.5px solid #000000; /* Adjust the first ring thickness and color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* Second ring */
+.ball .second-ring {
+  width: 120px; /* Adjust the size of the second ring */
+  height: 120px; /* Adjust the size of the second ring */
+  border: 1.5px solid #000000; /* Adjust the second ring thickness and color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(120deg); /* Position and rotate the second ring */
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* Third ring */
+.ball .third-ring {
+  width: 180px; /* Adjust the size of the third ring */
+  height: 180px; /* Adjust the size of the third ring */
+  border: 1.5px solid #000000; /* Adjust the third ring thickness and color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(240deg); /* Position and rotate the third ring */
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* Fourth ring */
+.ball .fourth-ring {
+  width: 240px; /* Adjust the size of the fourth ring */
+  height: 240px; /* Adjust the size of the fourth ring */
+  border: 1.5px solid #000000; /* Adjust the fourth ring thickness and color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(300deg); /* Position and rotate the fourth ring */
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* Fifth ring */
+.ball .fifth-ring {
+  width: 300px; /* Adjust the size of the fifth ring */
+  height: 300px; /* Adjust the size of the fifth ring */
+  border: 1.5px solid #000000; /* Adjust the fifth ring thickness and color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(360deg); /* Position and rotate the fifth ring */
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* Sixth ring */
+.ball .sixth-ring {
+  width: 360px; /* Adjust the size of the sixth ring */
+  height: 360px; /* Adjust the size of the sixth ring */
+  border: 1.5px solid #000000; /* Adjust the sixth ring thickness and color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(420deg); /* Position and rotate the sixth ring */
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* Seventh ring */
+.ball .seventh-ring {
+  width: 420px; /* Adjust the size of the seventh ring */
+  height: 420px; /* Adjust the size of the seventh ring */
+  border: 1.5px solid #000000; /* Adjust the seventh ring thickness and color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(480deg); /* Position and rotate the seventh ring */
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* Eighth ring */
+.ball .eighth-ring {
+  width: 480px; /* Adjust the size of the eighth ring */
+  height: 480px; /* Adjust the size of the eighth ring */
+  border: 1.5px solid #000000; /* Adjust the eighth ring thickness and color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(540deg); /* Position and rotate the eighth ring */
+  border-radius: 50%;
+  background: transparent;
+}
+
+
+
+
+
+
+/* Inner circle (smaller black pupil) */
+.pupil {
+  width: 15px; /* Adjust the size as needed */
+  height: 15px; /* Adjust the size as needed */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #000;
+  background: #000; /* Background color for the pupil */
+  z-index: 1; /* Ensure pupil is above the rings */
+}
