@@ -9,5 +9,4 @@ This project was very fun, wasn't anything too hard but definitley taught me a l
 In the future will probably add different styles of eyes.
 
 
-
-![Untitled design](https://github.com/user-attachments/assets/4259e4dd-7bab-4f49-8780-93ae8e672e9a)
+![Untitled design (1)](https://github.com/user-attachments/assets/0e9ebf90-36dc-422c-aa26-183821ce6f3a)
