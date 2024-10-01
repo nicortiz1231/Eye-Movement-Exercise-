@@ -1,4 +1,4 @@
-# Sharingan-Movement-Exercise
+# Sharingan-Eye-Exercise
 
 This is my version of the Eye Movement exercise from MIT xPro course. 
 
